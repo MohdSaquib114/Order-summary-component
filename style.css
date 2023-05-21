@@ -9,51 +9,61 @@ body{
 
 main{
     background-color: hsl(225, 100%, 98%);
-   border-radius: 6%;
+   border-radius: 1.5em;
 }
 
 #main-img{
 max-width: 100%;
 max-height: 100%;
-border-radius: 6% 6% 0 0;
+border-radius: 1.5em 1.5em 0 0;
 object-fit: fill;
 }
 
 article{
     text-align: center;
     font-size: 1.04rem;
-    padding: 2em;
+    padding: 1.3em;
+    margin: 0;
 
 }
  h1{
-     
+     font-size: 1.4em;
     font-weight:900;
+    
    
    
 }
-p{
+#main-content{
+    font-size: 08.em;
     font-weight: 500;
-    color: rgb(148, 149, 150);
-    line-height: 1.6em;
+    color:  hsl(224, 23%, 55%);
+    line-height: 1.7em;
+    padding: 0.1em;
+    margin-top: -0.4em;
 }
 
 div{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 2em;
+    padding: 0.9em;
 }
 div img{
    
-    justify-self: center;
-    align-self: center;
+    justify-self: start;
+    align-self: flex-start;
 }
 div strong{
-    
+    font-size: 1em;
+    margin-left: 0.4rem;
     justify-self: start;
     align-self: center;
 }
 div strong p{
    line-height: 1%; 
-   font-size: 0.7rem;
+   font-size: 0.8rem;
+   margin-left: -1.7em;
+   color: hsl(224, 23%, 55%);
 }
 
 div a{
@@ -64,19 +74,52 @@ div a{
 }
 
 
+#proceed-btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 2em;
+    color: hsl(225, 100%, 98%);
+    background-color:hsl(245, 75%, 52%) ;
+    border-radius: 1em 1em;
+  font-weight: 600;
+    border-style: none;
+}
+
+
+
+#proceed-btn:hover{
+    box-shadow: 0.1em 0.1em 1em 0.12em hsl(223, 47%, 23%);
+}
+
+
+#cancel-btn{
+    border-style: none;
+    background-color: hsl(225, 100%, 98%) ;
+    color: hsl(225, 17%, 47%);
+    font-weight: 600;
+    margin-top: 1em;
+}
 
 
 
 
-
-
-
-
-
-
-
-@media (min-width:400px) {
+@media (min-width:375px) {
     body{
-        background-color: aqua;
+      display: grid;
+      grid-template-rows: 1fr;
+    
+    }
+    main{
+        width: 300px;
+        height: 570px;
+        justify-self: center;
+        align-self: center;
+    }
+    article{
+        padding: 1em;
+    }
+    #main-content{
+font-size: medium;
     }
 }
