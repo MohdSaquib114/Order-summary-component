@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    font-weight: 500;
+    padding: 80px 25px 0px 25px;
+}
+
+main{
+    background-color: hsl(225, 100%, 98%);
+   border-radius: 6%;
+}
+
+#main-img{
+max-width: 100%;
+max-height: 100%;
+border-radius: 6% 6% 0 0;
+object-fit: fill;
+}
+
+article{
+    text-align: center;
+    font-size: 1.04rem;
+    padding: 2em;
+
+}
+ h1{
+     
+    font-weight:900;
+   
+   
+}
+p{
+    font-weight: 500;
+    color: rgb(148, 149, 150);
+    line-height: 1.6em;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+div img{
+   
+    justify-self: center;
+    align-self: center;
+}
+div strong{
+    
+    justify-self: start;
+    align-self: center;
+}
+div strong p{
+   line-height: 1%; 
+   font-size: 0.7rem;
+}
+
+div a{
+  font-size: 0.9em;
+  font-weight: 600;
+  align-self: center;
+  justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:400px) {
+    body{
+        background-color: aqua;
+    }
+}
